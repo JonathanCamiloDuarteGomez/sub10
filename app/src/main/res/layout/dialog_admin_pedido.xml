@@ -1,0 +1,122 @@
+<!-- dialog_pedido_admin.xml -->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="8dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="43dp"
+            android:layout_height="33dp"
+            android:layout_gravity="center"
+            android:layout_marginEnd="8dp"
+            android:contentDescription="Pedido Icono"
+            android:src="@mipmap/ic_pedido" />
+
+        <TextView
+            android:id="@+id/textViewFecha"
+            android:layout_width="wrap_content"
+            android:layout_height="28dp"
+            android:layout_gravity="center"
+            android:text="Fecha del Pedido"
+            android:textColor="@android:color/black"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textViewEstado"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Estado del Pedido"
+        android:textSize="16sp"
+        android:textColor="@android:color/black"
+        android:layout_marginBottom="8dp" />
+
+    <TextView
+        android:id="@+id/textViewTipo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Tipo de Pedido"
+        android:textSize="16sp"
+        android:textColor="@android:color/black"
+        android:layout_marginBottom="8dp" />
+
+    <!-- Bloque de información del cliente -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="16dp">
+
+        <TextView
+            android:id="@+id/textViewNombreCliente"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Nombre del Cliente"
+            android:textSize="16sp"
+            android:textColor="@android:color/black"
+            android:layout_marginBottom="8dp" />
+
+        <TextView
+            android:id="@+id/textViewCedulaCliente"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Cedula del Cliente"
+            android:textSize="16sp"
+            android:textColor="@android:color/black"
+            android:layout_marginBottom="8dp" />
+
+        <TextView
+            android:id="@+id/textViewCorreoCliente"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Correo del Cliente"
+            android:textSize="16sp"
+            android:textColor="@android:color/black"
+            android:layout_marginBottom="8dp" />
+
+        <TextView
+            android:id="@+id/textViewTelefonoCliente"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Teléfono del Cliente"
+            android:textSize="16sp"
+            android:textColor="@android:color/black"
+            android:layout_marginBottom="8dp" />
+
+        <TextView
+            android:id="@+id/textViewDireccionCliente"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Direccion del Cliente"
+            android:textSize="16sp"
+            android:textColor="@android:color/black"
+            android:layout_marginBottom="8dp" />
+
+    </LinearLayout>
+    <!-- Fin del bloque de información del cliente -->
+
+    <Button
+        android:id="@+id/btnEliminarPedido"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Eliminar"
+        android:layout_marginTop="16dp" />
+
+    <Button
+        android:id="@+id/btnEditarPedido"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Editar"
+        android:layout_marginTop="8dp" />
+
+</LinearLayout>

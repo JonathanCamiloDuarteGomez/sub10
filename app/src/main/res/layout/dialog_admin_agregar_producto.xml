@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <ImageView
+        android:layout_width="350dp"
+        android:layout_height="96dp"
+        android:src="@mipmap/ic_producto"/> <!-- Ajusta la imagen del icono de usuario -->
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Id"
+        android:id="@+id/editTextId"
+        android:inputType="number"/>
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nombre"
+        android:id="@+id/editTextNombre"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Categoria"
+        android:id="@+id/editTextCategoria"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Precio"
+        android:id="@+id/editTextPrecio"
+        android:inputType="number"/>
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Stock"
+        android:id="@+id/editTextStock"
+        android:inputType="number"/>
+
+
+
+</LinearLayout>

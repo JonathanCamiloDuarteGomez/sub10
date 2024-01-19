@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".vistas.HomeAdmin.ui.Clientes.ClientesFragment" >
+
+    <!-- Campo de búsqueda -->
+    <EditText
+        android:id="@+id/txtBuscar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Buscar cliente..."
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btnAgregar"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/recyclerViewClientes"
+        android:inputType="text"
+        android:imeOptions="actionSearch" />
+
+
+    <!-- Botón de adición -->
+    <Button
+        android:id="@+id/btnAgregar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="+"
+        app:layout_constraintStart_toEndOf="@+id/txtBuscar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- RecyclerView para la lista de clientes -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerViewClientes"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtBuscar" />
+</androidx.constraintlayout.widget.ConstraintLayout>

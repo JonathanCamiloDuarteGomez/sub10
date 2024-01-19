@@ -1,0 +1,57 @@
+<!-- client_item.xml -->
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:background="@drawable/rounded_rectangle"
+    android:layout_margin="8dp"
+    android:padding="8dp"
+    android:clickable="true">
+
+    <!-- Icono para todos los elementos (ajusta la fuente y el contenido según tus necesidades) -->
+    <ImageView
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@mipmap/ic_ventas"
+        android:layout_gravity="center"
+        android:contentDescription="Cliente Icono" />
+
+    <!-- Contenedor para el nombre y otros detalles del cliente -->
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:layout_marginStart="16dp">
+
+        <!-- Nombre del cliente en negrilla y grande -->
+        <TextView
+            android:id="@+id/totalTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="$ Total"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="@android:color/black" />
+
+        <!-- Otros detalles del cliente, como teléfono o dirección -->
+        <TextView
+            android:id="@+id/cantidadTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cantidad: "
+            android:textColor="@android:color/black"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/unitarioTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Unitario: "
+            android:textColor="@android:color/black"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".vistas.HomeCliente.HomeFragment">
+
+    <!-- Mensaje de bienvenida -->
+    <TextView
+        android:id="@+id/tvWelcomeMessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="¡Bienvenido!"
+        android:textSize="18sp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"/>
+
+    <!-- Banner de imágenes -->
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_below="@id/tvWelcomeMessage"
+        android:layout_centerHorizontal="true"
+        android:contentDescription="Imágenes del carrusel" />
+
+    <!-- Botón "Realiza tu pedido" -->
+    <Button
+        android:id="@+id/btnInicioPedido"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Realiza tu pedido"
+        android:layout_below="@id/viewPager"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp" />
+
+    <!-- Subtítulo "Productos" -->
+    <TextView
+        android:id="@+id/tvSubtitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Productos"
+        android:textSize="16sp"
+        android:layout_below="@id/btnInicioPedido"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"/>
+
+    <!-- Cuadrícula 4x4 -->
+    <GridLayout
+        android:id="@+id/gridLayoutProductos"
+        android:layout_width="wrap_content"
+        android:layout_height="320dp"
+        android:layout_below="@+id/tvSubtitle"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="21dp"
+        android:layout_marginEnd="14dp"
+        android:layout_marginBottom="48dp"
+        android:columnCount="2"
+        android:padding="8dp"
+        android:rowCount="2">
+
+        <!-- Incluye aquí tus elementos -->
+
+        <include
+            android:id="@+id/item1"
+            layout="@layout/item_cliente_anuncio"
+            android:layout_width="154dp"
+            android:layout_height="wrap_content"
+            android:layout_row="0"
+            android:layout_column="0" />
+
+        <include
+            android:id="@+id/item2"
+            layout="@layout/item_cliente_anuncio"
+            android:layout_width="192dp"
+            android:layout_height="wrap_content"
+            android:layout_row="0"
+            android:layout_column="1" />
+
+        <include
+            android:id="@+id/item3"
+            layout="@layout/item_cliente_anuncio"
+            android:layout_width="157dp"
+            android:layout_height="wrap_content"
+            android:layout_row="1"
+            android:layout_column="0" />
+
+        <include
+            android:id="@+id/item4"
+            layout="@layout/item_cliente_anuncio"
+            android:layout_width="193dp"
+            android:layout_height="wrap_content"
+            android:layout_row="1"
+            android:layout_column="1" />
+
+    </GridLayout>
+
+
+</RelativeLayout>

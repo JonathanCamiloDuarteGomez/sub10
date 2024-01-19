@@ -1,0 +1,67 @@
+<!-- dialog_producto_admin.xml -->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="8dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="43dp"
+            android:layout_height="33dp"
+            android:layout_gravity="center"
+            android:layout_marginEnd="8dp"
+            android:contentDescription="Producto Icono"
+            android:src="@mipmap/ic_producto" />
+
+        <TextView
+            android:id="@+id/textViewNombreProducto"
+            android:layout_width="wrap_content"
+            android:layout_height="28dp"
+            android:layout_gravity="center"
+            android:text="Nombre del Producto"
+            android:textColor="@android:color/black"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textViewPrecioProducto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Precio del Producto"
+        android:textSize="16sp"
+        android:textColor="@android:color/black"
+        android:layout_marginBottom="8dp" />
+
+    <TextView
+        android:id="@+id/textViewStockProducto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Stock del Producto"
+        android:textSize="16sp"
+        android:textColor="@android:color/black"
+        android:layout_marginBottom="8dp" />
+
+    <Button
+        android:id="@+id/btnEliminarProducto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Eliminar"
+        android:layout_marginTop="16dp" />
+
+    <Button
+        android:id="@+id/btnEditarProducto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Editar"
+        android:layout_marginTop="8dp" />
+
+</LinearLayout>

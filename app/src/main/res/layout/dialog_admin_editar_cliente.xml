@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <EditText
+        android:id="@+id/editTextNombre"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nuevo nombre" />
+
+    <EditText
+        android:id="@+id/editTextTelefono"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nuevo teléfono" />
+
+    <EditText
+        android:id="@+id/editTextCorreo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nuevo correo" />
+
+    <EditText
+        android:id="@+id/editTextCedula"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nueva cédula" />
+
+    <EditText
+        android:id="@+id/editTextDireccion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nueva dirección" />
+</LinearLayout>

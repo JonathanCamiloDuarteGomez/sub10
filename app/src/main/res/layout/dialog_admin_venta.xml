@@ -1,0 +1,80 @@
+<!-- dialog_admin_venta.xml -->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="8dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="43dp"
+            android:layout_height="33dp"
+            android:layout_gravity="center"
+            android:layout_marginEnd="8dp"
+            android:contentDescription="Venta Icono"
+            android:src="@mipmap/ic_out_producto" />
+
+        <TextView
+            android:id="@+id/textViewNombreVenta"
+            android:layout_width="wrap_content"
+            android:layout_height="28dp"
+            android:layout_gravity="center"
+            android:text="Nombre de la Venta"
+            android:textColor="@android:color/black"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textViewPedidoID"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Pedido ID"
+        android:textSize="16sp"
+        android:textColor="@android:color/black"
+        android:layout_marginBottom="8dp" />
+
+    <TextView
+        android:id="@+id/textViewProductoID"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Producto ID"
+        android:textSize="16sp"
+        android:textColor="@android:color/black"
+        android:layout_marginBottom="8dp" />
+
+    <TextView
+        android:id="@+id/textViewCantidad"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Cantidad"
+        android:textSize="16sp"
+        android:textColor="@android:color/black"
+        android:layout_marginBottom="8dp" />
+
+    <TextView
+        android:id="@+id/textViewPrecioUnitario"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Precio Unitario"
+        android:textSize="16sp"
+        android:textColor="@android:color/black"
+        android:layout_marginBottom="8dp" />
+
+    <TextView
+        android:id="@+id/textViewImporteTotal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Importe Total"
+        android:textSize="16sp"
+        android:textColor="@android:color/black"
+        android:layout_marginBottom="8dp" />
+
+</LinearLayout>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.example.sub10.vistas.HomeAdmin.ui.home.HomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/drawer_layout_admin" />
+
+    <fragment
+        android:id="@+id/nav_clientes"
+        android:name="com.example.sub10.vistas.HomeAdmin.ui.Clientes.ClientesFragment"
+        android:label="Clientes"
+        tools:layout="@layout/admin_fragment_clientes" />
+
+    <fragment
+        android:id="@+id/nav_productos"
+        android:name="com.example.sub10.vistas.HomeAdmin.ui.Productos.ProductosFragment"
+        android:label="Productos"
+        tools:layout="@layout/admin_fragment_productos" />
+
+    <fragment
+        android:id="@+id/nav_pedidos"
+        android:name="com.example.sub10.vistas.HomeAdmin.ui.Pedidos.PedidosFragment"
+        android:label="Pedidos"
+        tools:layout="@layout/admin_fragment_pedidos"/>
+
+    <fragment
+        android:id="@+id/nav_ventas"
+        android:name="com.example.sub10.vistas.HomeAdmin.ui.Ventas.VentasFragment"
+        android:label="Ventas"
+        tools:layout="@layout/admin_fragment_ventas"
+        />
+</navigation>
